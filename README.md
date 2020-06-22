@@ -17,3 +17,6 @@ Projeto desenvolvido para a matéria de Objetos Inteligenets Conectados.
 - **Desenvolvimento:** A IDE utilizada para programar e gravar o código no NodeMCU foi a **Arduino IDE**.
 - **Comunicação:** Para realizar a comunicação via Internet foi utilizado o protocólo MQTT.
 - **Visualização e Controle de Parâmetros:** Para visualização das informações publicadas pelo programa e alteração dos parâmetros utilizados no código foi utilizado o broker público do [Mosquitto](https://mosquitto.org/).
+
+# Diagramas
+[Imagem do diagrama]
