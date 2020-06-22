@@ -1,16 +1,17 @@
 # Termostato Inteligente
-Projeto desenvolvido para a matéria de Objetos Inteligenets Conectados.
+Projeto desenvolvido para auxiliar pessoas com deficiência de locomoção e/ou deficiência de funções motoras que estejam internados em hospitais ou até mesmo em casa no controle do ar-condicionado.  
+O sensor LM35 é o responsável por verificar a temperatura ambiente, a partir dessa informação o NodeMCU envia um comando para o ar-condicionado utilizando o LED emissor de infravermelho. O comando que será enviado irá depender da temperatura ambiente atual e das configurações feitas no broker MQTT.
 
 # Componentes Utilizados
 - [**NodeMCU ESP8266-12 V2** ](https://www.robocore.net/loja/iot/nodemcu-esp8266-12-v2): Placa NodeMCU com módulo WiFi ESP8266 já incluso.
 - [**Sensor LM-35**](https://www.robocore.net/loja/sensores/sensor-de-temperatura-lm35): Sensor utilizado para medir a temperatura com precisão.
 - [**LED Emissor Infravermelhor 5mm IR333C**](https://www.robocore.net/loja/itens-eletronicos/kit-receptor-e-emissor-ir-5mm): Atuador utilizado para enviar os comandos ao ar condicionado.
-- [**2 Protoboards 400 Pontos**](https://www.robocore.net/loja/protoboard/protoboard-400-pontos): Possui 2 barramentos para alimentação, 30 colunas e 10 linhas - um total de 400 pontos. Todos os pinos estão espaçados pelo padrão de 0,1". O espaçamento no meio é perfeito para componentes do tipo DIP. A protoboard aceita fios de 29AWG até 20AWG.
-- [**Jumper M/M**](https://www.robocore.net/loja/cabos-conectores/jumper-premium-macho-macho-20cm): Jumpers necessários para conectar os componentes.
+- [**Protoboard 400 Pontos**](https://www.robocore.net/loja/protoboard/protoboard-400-pontos): Possui 2 barramentos para alimentação, 30 colunas e 10 linhas - um total de 400 pontos. Todos os pinos estão espaçados pelo padrão de 0,1". O espaçamento no meio é perfeito para componentes do tipo DIP. A protoboard aceita fios de 29AWG até 20AWG.
+- [**7 Jumpers M/M**](https://www.robocore.net/loja/cabos-conectores/jumper-premium-macho-macho-20cm): Jumpers necessários para conectar os componentes.
 
 # Bibliotecas utilizadas
-- [**ESP8266Wifi**](https://github.com/ekstrand/ESP8266wifi): Biblioteca utilizada para poder conectar a placa de desenvolvimento (NodeMCU) à rede wifi. ESP8266Wifi
-- [**PubSubClient**](https://github.com/knolleary/pubsubclient): Biblioteca que permite a comunicação através do protocolo MQTT. PubSubClient
+- [**ESP8266Wifi**](https://github.com/ekstrand/ESP8266wifi): Biblioteca utilizada para poder conectar a placa de desenvolvimento (NodeMCU) à rede wifi.
+- [**PubSubClient**](https://github.com/knolleary/pubsubclient): Biblioteca que permite a comunicação através do protocolo MQTT.
 - [**IRremoteESP8266**](https://github.com/crankyoldgit/IRremoteESP8266): Biblioteca que permite o envio e recebimento de sinais infravermelhos com o ESP8266 e um led 940nm comum.
 
 # Interfaces e protocólos
@@ -19,4 +20,4 @@ Projeto desenvolvido para a matéria de Objetos Inteligenets Conectados.
 - **Visualização e Controle de Parâmetros:** Para visualização das informações publicadas pelo programa e alteração dos parâmetros utilizados no código foi utilizado o broker público do [Mosquitto](https://mosquitto.org/).
 
 # Diagrama do circuito
-![alt text](https://github.com/TSmota/OIC-smart-thermostat/blob/master/diagrama.png)
+![Diagrama do circuito do termostato inteligente](https://github.com/TSmota/OIC-smart-thermostat/blob/master/diagrama.png)
