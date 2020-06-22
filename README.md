@@ -19,4 +19,4 @@ Projeto desenvolvido para a matéria de Objetos Inteligenets Conectados.
 - **Visualização e Controle de Parâmetros:** Para visualização das informações publicadas pelo programa e alteração dos parâmetros utilizados no código foi utilizado o broker público do [Mosquitto](https://mosquitto.org/).
 
 # Diagrama do circuito
-
+![alt text](https://github.com/TSmota/OIC-smart-thermostat/blob/master/diagrama.png)
