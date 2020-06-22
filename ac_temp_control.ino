@@ -231,30 +231,30 @@ void loop() {
     client.publish("info/ac", acStatus.c_str());
   }
 
-  if(now - acUpdate > 300000){
+  if(now - acUpdate > 5000){
 
     acUpdate = now;
     int ambientTemp = (int) celsius;
     
     if (desiredTemp != ambientTemp && autoMode){
       
-      if(desiredTemp < ambientTemp && acTemp < 31){
-        ac.on();
-        acTemp += 1;
-        ac.setTemp(acTemp);
-        ac.send();
-        
-      } else if (desiredTemp < ambientTemp && acTemp == 31){
-        ac.off();
-        ac.send();
-        
-      } else if (desiredTemp > ambientTemp && acTemp > 16){
+      if(desiredTemp < ambientTemp && acTemp > 16){
         ac.on();
         acTemp -= 1;
         ac.setTemp(acTemp);
         ac.send();
         
-      } else if (desiredTemp > ambientTemp && acTemp == 16){
+      } else if (desiredTemp < ambientTemp && acTemp == 16){
+        ac.off();
+        ac.send();
+        
+      } else if (desiredTemp > ambientTemp && acTemp < 31){
+        ac.on();
+        acTemp += 1;
+        ac.setTemp(acTemp);
+        ac.send();
+        
+      } else if (desiredTemp > ambientTemp && acTemp == 31){
         ac.off();
         ac.send();
       }
