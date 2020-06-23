@@ -21,3 +21,9 @@ O sensor LM35 é o responsável por verificar a temperatura ambiente, a partir d
 
 # Diagrama do circuito
 ![Diagrama do circuito do termostato inteligente](https://github.com/TSmota/OIC-smart-thermostat/blob/master/diagrama.png)
+
+# Como fazer
+- Siga o tutorial encontrado ![neste link](https://randomnerdtutorials.com/esp8266-and-node-red-with-mqtt/) para a configuração inicial do seu projeto;
+- Baixe o arquivo "" e importe no node-red;
+- Baixe o arquivo "ac_temp_control.ino" e o carregue no seu nodemcu
+
