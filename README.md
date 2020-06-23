@@ -28,4 +28,5 @@ O sensor LM35 é o responsável por verificar a temperatura ambiente, a partir d
 - Monte o seu circuito com base em nosso diagrama, utilizando os materiais informados;
 - Baixe o arquivo "ac_temp_control.ino" e configure as credenciais de acesso ao wifi e o objeto de controle de ar condicioado, caso haja necessidade;
 - Caso ocorram dúvidas sobre o código, [este vídeo](https://youtu.be/LxmnRRdBWjY) tem uma explicação do funcionamento de cada parte do código.
+- Após configurado, carregue o código em seu nodemcu
 
