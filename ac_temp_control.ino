@@ -231,7 +231,7 @@ void loop() {
     client.publish("info/ac", acStatus.c_str());
   }
 
-  if(now - acUpdate > 5000){
+  if(now - acUpdate > 300000){
 
     acUpdate = now;
     int ambientTemp = (int) celsius;
