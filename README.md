@@ -26,5 +26,6 @@ O sensor LM35 é o responsável por verificar a temperatura ambiente, a partir d
 - Siga o tutorial encontrado [neste link](https://randomnerdtutorials.com/esp8266-and-node-red-with-mqtt/) para a configuração inicial do seu projeto (não é necessário um raspberri pi. o mosquitto pode ser instalando em sua máquina windows, clicando [aqui](https://mosquitto.org/));
 - Baixe o arquivo "flows.json" e importe no node-red;
 - Monte o seu circuito com base em nosso diagrama, utilizando os materiais informados;
-- Baixe o arquivo "ac_temp_control.ino" e o carregue no seu nodemcu;
+- Baixe o arquivo "ac_temp_control.ino" e configure as credenciais de acesso ao wifi e o objeto de controle de ar condicioado, caso haja necessidade;
+- Caso ocorram dúvidas sobre o código, [este vídeo](https://youtu.be/LxmnRRdBWjY) tem uma explicação do funcionamento de cada parte do código.
 
