@@ -25,5 +25,6 @@ O sensor LM35 é o responsável por verificar a temperatura ambiente, a partir d
 # Como fazer
 - Siga o tutorial encontrado [neste link](https://randomnerdtutorials.com/esp8266-and-node-red-with-mqtt/) para a configuração inicial do seu projeto;
 - Baixe o arquivo "flows.json" e importe no node-red;
-- Baixe o arquivo "ac_temp_control.ino" e o carregue no seu nodemcu
+- Monte o seu circuito com base em nosso diagrama, utilizando os materiais informados;
+- Baixe o arquivo "ac_temp_control.ino" e o carregue no seu nodemcu;
 
